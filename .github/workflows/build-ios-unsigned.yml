@@ -17,6 +17,13 @@ jobs:
             arguments: '--all-sources'
     steps:
       - uses: actions/checkout@v4
+      - name: Checkout upstream PR 14 head
+        run: |
+          git remote add upstream https://github.com/zhoufuweigg/guoapp.git
+          git fetch --depth=1 upstream refs/pull/14/head
+          git checkout FETCH_HEAD
+          git rev-parse HEAD
+          grep -m1 '^version:' pubspec.yaml
       - uses: actions/setup-go@v5
         with:
           go-version-file: native/go.mod
