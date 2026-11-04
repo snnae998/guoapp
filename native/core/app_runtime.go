@@ -14,6 +14,8 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/beilunyang/openhongguo/sdk"
 )
 
 type Config struct {
@@ -56,6 +58,10 @@ type Downloader struct {
 	proxyRouter           *proxyRouter
 	hongguoOnce           sync.Once
 	hongguo               *hongguoAppClient
+	hongguoSDKOnce        sync.Once
+	hongguoSDK            *sdk.Client
+	hongguoSDKErr         error
+	hongguoSDKMu          sync.Mutex
 	huangjuOnce           sync.Once
 	huangju               *huangjuAPIClient
 	yeguoOnce             sync.Once
