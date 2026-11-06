@@ -61,7 +61,6 @@ type Downloader struct {
 	hongguoSDKOnce        sync.Once
 	hongguoSDK            *sdk.Client
 	hongguoSDKErr         error
-	hongguoSDKMu          sync.Mutex
 	huangjuOnce           sync.Once
 	huangju               *huangjuAPIClient
 	yeguoOnce             sync.Once
