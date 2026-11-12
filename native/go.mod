@@ -3,7 +3,7 @@ module duanjuapp/native
 go 1.24.1
 
 require (
-	github.com/beilunyang/openhongguo v0.2.0
+	github.com/beilunyang/openhongguo v0.2.1-0.20261111115741-4bc88830eba1
 	github.com/bogdanfinn/fhttp v0.6.9
 	github.com/bogdanfinn/tls-client v1.16.0
 	golang.org/x/net v0.48.0

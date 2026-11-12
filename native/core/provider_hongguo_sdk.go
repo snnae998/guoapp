@@ -16,7 +16,9 @@ import (
 	sdkmodel "github.com/beilunyang/openhongguo/sdk/model"
 )
 
-const hongguoSDKDeviceResets = 2
+const hongguoSDKDeviceResets = 5
+
+const hongguoSDKPlaybackRounds = 3
 
 const hongguoSDKProfileName = "hongguo-sdk-device.json"
 
@@ -26,7 +28,7 @@ func (d *Downloader) hongguoSDKClient() (*sdk.Client, error) {
 		if dir == "" {
 			dir = os.TempDir()
 		}
-		client, err := adapters.NewClient(filepath.Join(dir, hongguoSDKProfileName), sdk.Options{RetryAttempts: 3, DeviceResets: sdk.Int(hongguoSDKDeviceResets)})
+		client, err := adapters.NewClient(filepath.Join(dir, hongguoSDKProfileName), sdk.Options{RetryAttempts: 4, DeviceResets: sdk.Int(hongguoSDKDeviceResets)})
 		if err != nil {
 			d.hongguoSDKErr = fmt.Errorf("红果 SDK 初始化失败: %w", err)
 			return
@@ -50,13 +52,44 @@ func (d *Downloader) resolveHongguoSDKPlayback(ctx context.Context, episodeID st
 	if err != nil {
 		return providerMedia{}, err
 	}
-	reqCtx, cancel := context.WithTimeout(ctx, 45*time.Second)
+	reqCtx, cancel := context.WithTimeout(ctx, 120*time.Second)
 	defer cancel()
-	pb, err := client.ResolvePlayback(reqCtx, episodeID, sdk.PlaybackOptions{})
-	if err != nil && (!errors.Is(err, sdk.ErrDRMProtected) || pb == nil) {
-		return providerMedia{}, fmt.Errorf("红果 SDK 取流失败: %w", err)
+	var lastErr error
+	for round := 0; round < hongguoSDKPlaybackRounds; round++ {
+		if round > 0 {
+			if err := client.ResetDevice(reqCtx); err != nil {
+				break
+			}
+			timer := time.NewTimer(time.Duration(round) * 600 * time.Millisecond)
+			select {
+			case <-reqCtx.Done():
+				timer.Stop()
+				return providerMedia{}, reqCtx.Err()
+			case <-timer.C:
+			}
+		}
+		pb, err := client.ResolvePlayback(reqCtx, episodeID, sdk.PlaybackOptions{})
+		if err != nil && (!errors.Is(err, sdk.ErrDRMProtected) || pb == nil) {
+			lastErr = err
+			if !hongguoSDKDeviceFailure(err) {
+				break
+			}
+			continue
+		}
+		media, convErr := hongguoSDKPlaybackToMedia(pb)
+		if convErr == nil {
+			return media, nil
+		}
+		lastErr = convErr
 	}
-	return hongguoSDKPlaybackToMedia(pb)
+	if lastErr != nil {
+		return providerMedia{}, fmt.Errorf("红果 SDK 取流失败: %w", lastErr)
+	}
+	return providerMedia{}, errors.New("红果 SDK 取流失败")
+}
+
+func hongguoSDKDeviceFailure(err error) bool {
+	return errors.Is(err, sdk.ErrAnonymousLimited) || errors.Is(err, sdk.ErrDeviceRejected)
 }
 
 func hongguoSDKPlaybackToMedia(pb *sdkmodel.Playback) (providerMedia, error) {
