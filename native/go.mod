@@ -3,7 +3,7 @@ module duanjuapp/native
 go 1.24.1
 
 require (
-	github.com/beilunyang/openhongguo v0.3.0
+	github.com/beilunyang/openhongguo v0.3.1-0.20261117172444-6919947a19f3
 	github.com/bogdanfinn/fhttp v0.6.9
 	github.com/bogdanfinn/tls-client v1.16.0
 	golang.org/x/net v0.48.0
@@ -24,5 +24,3 @@ require (
 	golang.org/x/crypto v0.46.0 // indirect
 	golang.org/x/sys v0.39.0
 )
-
-replace github.com/beilunyang/openhongguo => ./third_party/openhongguo
