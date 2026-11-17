@@ -1,0 +1,26 @@
+{
+  "code": 0,
+  "message": "SUCCESS",
+  "search_tabs": [
+    {
+      "tab_type": 11,
+      "title": "短剧",
+      "has_more": false,
+      "data": [
+        {
+          "video_data": [
+            {
+              "series_id": "7100000000000101",
+              "title": "Fixture Lantern Court",
+              "video_detail": {
+                "series_title": "Fixture Lantern Court",
+                "series_intro": "A public synopsis.",
+                "episode_cnt": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "show_type": 160,
+      "cell_id": 7100000000000400,
+      "cell_name": "相关推荐",
+      "video_data": [
+        {
+          "series_id": "7100000000000101",
+          "title": "Fixture One",
+          "cover": "https://media.invalid/a.jpg?x-expires=1893456000&x-signature=f",
+          "episode_cnt": 12
+        },
+        {
+          "series_id": "7100000000000102",
+          "title": "Fixture Two",
+          "cover": "",
+          "episode_cnt": 8
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+node_modules/
+# ../mobile/build.sh react-native 放进来的 Go core
+android/libs/
+android/src/main/jniLibs/
+android/build/
+ios/OpenhongguoCore.xcframework/
+build/
+# npm pack 时从仓库根目录复制
+LICENSE
+*.tgz

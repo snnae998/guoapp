@@ -1,0 +1,116 @@
+{
+  "package": "com.phoenix.read",
+  "version_name": "7.3.9.32",
+  "version_code": "73932",
+  "surfaces": [
+    {
+      "id": "guest_registration",
+      "method": "POST",
+      "host": "log.snssdk.com",
+      "path": "/service/2/device_register/",
+      "request_fields": [
+        "req_id",
+        "tt_data",
+        "magic_tag",
+        "header",
+        "_gen_time"
+      ]
+    },
+    {
+      "id": "discovery",
+      "method": "GET",
+      "path": "/reading/bookapi/bookmall/tab/v",
+      "request_fields": [
+        "device_id",
+        "iid",
+        "aid",
+        "app_name",
+        "version_code",
+        "version_name",
+        "channel",
+        "device_platform",
+        "_rticket",
+        "tab_type",
+        "offset",
+        "client_req_type",
+        "bottom_tab_type",
+        "bottom_tab_type_list"
+      ]
+    },
+    {
+      "id": "discovery_unlimited",
+      "method": "GET",
+      "path": "/reading/bookapi/bookmall/cell/change/v",
+      "request_fields": [
+        "cell_id",
+        "offset",
+        "limit",
+        "change_type",
+        "tab_type",
+        "show_type",
+        "client_req_type",
+        "session_id",
+        "client_template"
+      ]
+    },
+    {
+      "id": "search",
+      "method": "GET",
+      "path": "/reading/bookapi/search/tab/v",
+      "request_fields": [
+        "device_id",
+        "iid",
+        "aid",
+        "app_name",
+        "version_code",
+        "version_name",
+        "channel",
+        "device_platform",
+        "_rticket",
+        "query",
+        "offset",
+        "count",
+        "tab_type",
+        "search_source",
+        "tab_name",
+        "bookstore_tab",
+        "bookshelf_search_plan",
+        "user_is_login"
+      ]
+    },
+    {
+      "id": "series_detail",
+      "method": "POST",
+      "path": "/novel/player/video_detail/v1/",
+      "request_fields": [
+        "series_id",
+        "biz_param",
+        "caller_scene",
+        "detail_page_version",
+        "from_video_id",
+        "need_all_video_definition",
+        "need_mp4_align",
+        "source",
+        "video_id_type"
+      ]
+    },
+    {
+      "id": "episode_list",
+      "method": "POST",
+      "path": "/novel/player/video_detail/v1/",
+      "request_fields": [
+        "series_id",
+        "biz_param"
+      ]
+    },
+    {
+      "id": "playback_classification",
+      "method": "POST",
+      "path": "/novel/player/video_model/v1/",
+      "request_fields": [
+        "video_id",
+        "biz_param"
+      ]
+    }
+  ]
+}

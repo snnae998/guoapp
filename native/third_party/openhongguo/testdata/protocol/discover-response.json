@@ -1,0 +1,43 @@
+{
+  "code": 0,
+  "message": "SUCCESS",
+  "data": {
+    "tab_item": [
+      {
+        "tab_type": 16,
+        "title": "推荐",
+        "has_more": false,
+        "cell_data": [
+          {
+            "cell_data": [
+              {
+                "video_data": [
+                  {
+                    "series_id": "7100000000000101",
+                    "video_detail": {
+                      "series_title": "Fixture Lantern Court",
+                      "series_intro": "A public synopsis.",
+                      "episode_cnt": 2
+                    }
+                  }
+                ]
+              },
+              {
+                "video_data": [
+                  {
+                    "series_id": "7100000000000102",
+                    "video_detail": {
+                      "series_title": "Fixture River Market",
+                      "series_intro": "Another public synopsis.",
+                      "episode_cnt": 3
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

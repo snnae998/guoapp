@@ -1,0 +1,73 @@
+{
+  "code": 0,
+  "message": "请求成功",
+  "data": {
+    "common_list_info": {
+      "cursor": "{\"next_cursor\": [{\"id\": 0, \"tab\": 22, \"sub_tab\": null, \"cursor\": 2, \"has_more\": true, \"min_cursor\": 0, \"max_cursor\": 0, \"prev_cursor\": 0, \"prev_has_more\": false}], \"has_more\": true, \"prev_has_more\": false}",
+      "has_more": true,
+      "prev_has_more": false
+    },
+    "data_list": [
+      {
+        "data_type": 1,
+        "video": {
+          "video_id": "7100000000001801",
+          "common": {
+            "title": "Fixture Work One",
+            "intro": "fixture text",
+            "cover": "https://media.invalid/work-1.jpg?x-expires=1797997124",
+            "video_content_type": 1,
+            "video_type": 0
+          },
+          "stat": {
+            "digg_cnt": 0,
+            "hot": 52912861,
+            "play_cnt": 7409454
+          },
+          "expand": {
+            "audit_status": 1,
+            "episode_cnt": 70,
+            "sub_title_list": [
+              {
+                "text": "爱情",
+                "text_ext": 0
+              },
+              {
+                "text": "70集",
+                "text_ext": 0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "data_type": 1,
+        "video": {
+          "video_id": "7100000000001802",
+          "common": {
+            "title": "Fixture Work Two",
+            "intro": "fixture text",
+            "cover": "https://media.invalid/work-2.jpg",
+            "video_content_type": 1,
+            "video_type": 0
+          },
+          "stat": {
+            "digg_cnt": 0,
+            "hot": 1000,
+            "play_cnt": 2000
+          },
+          "expand": {
+            "audit_status": 1,
+            "episode_cnt": 40,
+            "sub_title_list": [
+              {
+                "text": "综艺",
+                "text_ext": 0
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

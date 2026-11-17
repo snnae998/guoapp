@@ -1,0 +1,412 @@
+{
+  "code": 0,
+  "message": "SUCCESS",
+  "data": {
+    "cell_view": {
+      "cell_data": [
+        {
+          "cell_id": 0,
+          "cell_name": "",
+          "show_type": 521,
+          "ugc_user_data": [
+            {
+              "user_info": {
+                "user_id": "7100000000001301",
+                "base_info": {
+                  "user_id": "7100000000001301",
+                  "user_name": "Fixture Actor A",
+                  "user_avatar": "https://media.invalid/avatar-1.jpg",
+                  "gender": 0,
+                  "actor_id": 7100000000001401,
+                  "actor_id_str": "7100000000001401"
+                }
+              },
+              "rec_text_item": {
+                "RecommendText": "700万人气",
+                "RecommendType": 12
+              },
+              "intro": "《Fixture Work 1》",
+              "sub_title_list": [
+                {
+                  "content": "10部作品"
+                },
+                {
+                  "content": "双周追剧200万人"
+                }
+              ],
+              "rank_change_data": {
+                "rank_change_type": 1,
+                "ChangeNum": 1
+              }
+            }
+          ]
+        },
+        {
+          "cell_id": 0,
+          "cell_name": "",
+          "show_type": 521,
+          "ugc_user_data": [
+            {
+              "user_info": {
+                "user_id": "7100000000001302",
+                "base_info": {
+                  "user_id": "7100000000001302",
+                  "user_name": "Fixture Actor B",
+                  "user_avatar": "https://media.invalid/avatar-2.jpg",
+                  "gender": 0,
+                  "actor_id": 7100000000001402,
+                  "actor_id_str": "7100000000001402"
+                }
+              },
+              "rec_text_item": {
+                "RecommendText": "699万人气",
+                "RecommendType": 12
+              },
+              "intro": "《Fixture Work 2》",
+              "sub_title_list": [
+                {
+                  "content": "11部作品"
+                },
+                {
+                  "content": "双周追剧201万人"
+                }
+              ],
+              "rank_change_data": {
+                "rank_change_type": 2,
+                "ChangeNum": 2
+              }
+            }
+          ]
+        },
+        {
+          "cell_id": 0,
+          "cell_name": "",
+          "show_type": 521,
+          "ugc_user_data": [
+            {
+              "user_info": {
+                "user_id": "7100000000001303",
+                "base_info": {
+                  "user_id": "7100000000001303",
+                  "user_name": "Fixture Actor C",
+                  "user_avatar": "https://media.invalid/avatar-3.jpg",
+                  "gender": 0,
+                  "actor_id": 7100000000001403,
+                  "actor_id_str": "7100000000001403"
+                }
+              },
+              "rec_text_item": {
+                "RecommendText": "698万人气",
+                "RecommendType": 12
+              },
+              "intro": "《Fixture Work 3》",
+              "sub_title_list": [
+                {
+                  "content": "12部作品"
+                },
+                {
+                  "content": "双周追剧202万人"
+                }
+              ],
+              "rank_change_data": {
+                "rank_change_type": 0,
+                "ChangeNum": 0
+              }
+            }
+          ]
+        }
+      ],
+      "cell_selector": {
+        "outer_row": {
+          "items": [
+            {
+              "selector_item_id": "all",
+              "show_name": "全部",
+              "is_selected": false,
+              "show_type": 505,
+              "selector_item_type": "",
+              "sub_cell_selector": {
+                "outer_row": {
+                  "items": [
+                    {
+                      "selector_item_id": "ranklist_hot_sc",
+                      "show_name": "推荐榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "ranklist_hot_play_sc",
+                      "show_name": "热播榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "ranklist_prestige",
+                      "show_name": "臻果榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "ranklist_subscribe",
+                      "show_name": "预约榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "ranklist_new_rank_sc",
+                      "show_name": "新剧榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "ranklist_hot_search_sc",
+                      "show_name": "热搜榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "ranklist_chase_update",
+                      "show_name": "追更榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "ranklist_must_watch",
+                      "show_name": "必看榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "ranklist_followed",
+                      "show_name": "收藏榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "selector_item_id": "human",
+              "show_name": "真人剧",
+              "is_selected": false,
+              "show_type": 505,
+              "selector_item_type": "",
+              "sub_cell_selector": {
+                "outer_row": {
+                  "items": [
+                    {
+                      "selector_item_id": "human_hot_sc",
+                      "show_name": "推荐榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "human_hot_play",
+                      "show_name": "热播榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "human_new_rank",
+                      "show_name": "新剧榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "human_hot_search",
+                      "show_name": "热搜榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "human_must_watch",
+                      "show_name": "必看榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "human_followed",
+                      "show_name": "收藏榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "selector_item_id": "comic_series_rank",
+              "show_name": "漫剧",
+              "is_selected": false,
+              "show_type": 505,
+              "selector_item_type": "",
+              "sub_cell_selector": {
+                "outer_row": {
+                  "items": [
+                    {
+                      "selector_item_id": "comic_series_hot_rank",
+                      "show_name": "推荐榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "comic_series_hot_play",
+                      "show_name": "热播榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "comic_series_new_rank",
+                      "show_name": "新剧榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "comic_series_hot_search",
+                      "show_name": "热搜榜",
+                      "is_selected": false,
+                      "show_type": 0,
+                      "selector_item_type": ""
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "selector_item_id": "ai_playlet",
+              "show_name": "AI剧",
+              "is_selected": false,
+              "show_type": 505,
+              "selector_item_type": "",
+              "sub_cell_selector": {
+                "outer_row": {
+                  "items": [
+                    {
+                      "selector_item_id": "ai_playlet_hot_sc",
+                      "show_name": "推荐榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "ai_playlet_hot_play",
+                      "show_name": "热播榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "ai_playlet_new_rank",
+                      "show_name": "新剧榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "ai_playlet_hot_search",
+                      "show_name": "热搜榜",
+                      "is_selected": false,
+                      "show_type": 0,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "ai_playlet_must_watch",
+                      "show_name": "必看榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "ai_playlet_followed",
+                      "show_name": "收藏榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "selector_item_id": "ranklist_celebrity",
+              "show_name": "演员",
+              "is_selected": true,
+              "show_type": 521,
+              "selector_item_type": "",
+              "sub_cell_selector": {
+                "outer_row": {
+                  "items": [
+                    {
+                      "selector_item_id": "ranklist_series_actor",
+                      "show_name": "剧星榜",
+                      "is_selected": true,
+                      "show_type": 521,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "ranklist_actor_fans",
+                      "show_name": "星光榜",
+                      "is_selected": false,
+                      "show_type": 521,
+                      "selector_item_type": ""
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "selector_item_id": "series_album",
+              "show_name": "系列剧",
+              "is_selected": false,
+              "show_type": 505,
+              "selector_item_type": "",
+              "sub_cell_selector": {
+                "outer_row": {
+                  "items": [
+                    {
+                      "selector_item_id": "series_album_hot_sc",
+                      "show_name": "推荐榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    },
+                    {
+                      "selector_item_id": "series_album_new_rank",
+                      "show_name": "新季榜",
+                      "is_selected": false,
+                      "show_type": 505,
+                      "selector_item_type": ""
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "has_more": true,
+    "next_offset": 3,
+    "session_id": "fixture-session",
+    "rank_version": ""
+  }
+}

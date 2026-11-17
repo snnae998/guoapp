@@ -1,0 +1,8 @@
+{
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "expire_time": 1893456000,
+    "video_model": "{\"status\":10,\"video_id\":\"v-drm-fixture\",\"media_type\":\"video\",\"video_duration\":60.5,\"url_expire\":1893456000,\"video_list\":[{\"main_url\":\"https://media.invalid/drm-720.mp4\",\"backup_url\":\"https://media.invalid/drm-720-backup.mp4\",\"encrypt_info\":{\"encrypt\":true,\"encryption_method\":\"cenc-aes-ctr\",\"kid\":\"fixture-kid\",\"spade_a\":\"fixture-spade\"},\"gear_des_key\":\"0:MP4|1:encr|fixture\",\"check_info\":{\"check_info\":\"c:0-100-fixture\"},\"video_meta\":{\"definition\":\"720p\",\"quality\":\"normal\",\"codec_type\":\"bytevc1\",\"vwidth\":720,\"vheight\":1280,\"bitrate\":1000000,\"size\":1000000}}]}"
+  }
+}

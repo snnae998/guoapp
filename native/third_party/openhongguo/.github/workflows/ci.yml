@@ -1,0 +1,181 @@
+# Builds and tests the Go SDK and every binding on each push and pull
+# request, without touching the network: the bindings replay
+# testdata/protocol through bindings/internal/fixtures.
+name: ci
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["**.md", "docs/**"]
+  pull_request:
+    paths-ignore: ["**.md", "docs/**"]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # Keep in step with golang.org/x/mobile in bindings/mobile/core/go.mod.
+  GOMOBILE_VERSION: v0.0.0-20261011034528-197770444867
+
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version-file: go.mod
+      - run: test -z "$(gofmt -l $(git ls-files '*.go'))"
+      - run: go vet ./...
+      # Also fails when types.d.ts, Types.kt or Types.swift is stale.
+      - run: go test ./...
+      - run: GOOS=js GOARCH=wasm go vet ./bindings/node/wasm
+
+  node:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      matrix:
+        node: [20, 22]
+    defaults:
+      run:
+        working-directory: bindings/node
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: stable
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm run build
+      - run: npm test
+      - run: npm pack --dry-run
+
+  react-native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: bindings/react-native
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+      - run: npm ci
+      # Compiles to build/ and tests the client against a fake native module.
+      - run: npm test
+
+  flutter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: bindings/flutter
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: subosito/flutter-action@1a449444c387b1966244ae4d4f8c696479add0b2 # v2.23.0
+        with:
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      # pub.dev scores the same analysis after publishing.
+      - run: flutter analyze
+      # Tests the client against a mocked platform channel.
+      - run: flutter test
+
+  mobile-core:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: bindings/mobile/core
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version-file: bindings/mobile/core/go.mod
+          cache-dependency-path: bindings/mobile/core/go.sum
+      - run: go vet ./...
+      - run: go test ./...
+
+  android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version-file: bindings/mobile/core/go.mod
+          cache-dependency-path: bindings/mobile/core/go.sum
+      - uses: actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78 # v6.2.0
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@8da46b539cd8fe6ab27ca75128919a18d757604c # v6.4.1
+      - name: Install gomobile
+        run: |
+          go install golang.org/x/mobile/cmd/gomobile@$GOMOBILE_VERSION golang.org/x/mobile/cmd/gobind@$GOMOBILE_VERSION
+          gomobile init
+      # Builds the .aar and runs the Kotlin unit tests.
+      - run: bindings/mobile/build.sh android
+      # The runner's disk is too small for an emulator's userdata partition
+      # once the build is done; drop toolchains this job never uses.
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL /usr/local/share/boost
+          df -h /
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Start fixture server
+        run: |
+          go build -o "$RUNNER_TEMP/fixtureserver" ./bindings/mobile/fixtureserver
+          "$RUNNER_TEMP/fixtureserver" -addr 127.0.0.1:8790 &
+      # The emulator reaches the fixture server on the host as 10.0.2.2.
+      - uses: reactivecircus/android-emulator-runner@a421e43855164a8197daf9d8d40fe71c6996bb0d # v2.38.0
+        with:
+          api-level: 34
+          arch: x86_64
+          target: google_apis
+          disable-animations: true
+          disk-size: 2G
+          working-directory: bindings/mobile/android
+          script: ./gradlew connectedDebugAndroidTest
+      - if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: android
+          path: |
+            bindings/mobile/android/build/outputs/aar/*.aar
+            bindings/mobile/android/build/reports/
+          if-no-files-found: ignore
+
+  ios:
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version-file: bindings/mobile/core/go.mod
+          cache-dependency-path: bindings/mobile/core/go.sum
+      - name: Install gomobile
+        run: |
+          go install golang.org/x/mobile/cmd/gomobile@$GOMOBILE_VERSION golang.org/x/mobile/cmd/gobind@$GOMOBILE_VERSION
+          gomobile init
+      - run: bindings/mobile/build.sh ios
+      # Runs on the macOS slice against the fixture server.
+      - run: swift test
+        working-directory: bindings/mobile/ios
+      - name: Build for iOS devices and simulators
+        working-directory: bindings/mobile/ios
+        run: |
+          swift build --triple arm64-apple-ios13.0 --sdk "$(xcrun --sdk iphoneos --show-sdk-path)"
+          swift build --triple arm64-apple-ios13.0-simulator --sdk "$(xcrun --sdk iphonesimulator --show-sdk-path)"
