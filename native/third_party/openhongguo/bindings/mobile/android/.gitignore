@@ -1,0 +1,8 @@
+.gradle/
+build/
+local.properties
+# ../build.sh 生成的 Go core 库
+libs/
+src/main/jniLibs/
+# Kotlin 2.x 的编译缓存
+.kotlin/

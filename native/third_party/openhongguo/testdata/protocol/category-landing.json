@@ -1,0 +1,69 @@
+{
+  "code": 0,
+  "message": "SUCCESS",
+  "data": {
+    "offset": 20,
+    "has_more": true,
+    "category": {
+      "id": 68,
+      "name": "Fixture Category",
+      "description": "Fixture description",
+      "book_num": 0
+    },
+    "rule": {
+      "book_status": [
+        {
+          "name": "全部",
+          "value": "2"
+        },
+        {
+          "name": "完结",
+          "value": "0"
+        }
+      ],
+      "sort_by": [
+        {
+          "name": "综合",
+          "value": "0"
+        },
+        {
+          "name": "热门",
+          "value": "24"
+        }
+      ],
+      "sub_category": [
+        {
+          "name": "全部",
+          "value": "0"
+        },
+        {
+          "name": "科幻末世",
+          "value": "8"
+        }
+      ],
+      "word_type": [
+        {
+          "name": "全部",
+          "value": "0"
+        },
+        {
+          "name": "100万字以下",
+          "value": "1"
+        }
+      ],
+      "sort_choose": "0"
+    },
+    "book_info": [
+      {
+        "book_id": "7100000000000301",
+        "book_name": "Fixture Book",
+        "author": "Fixture Author",
+        "abstract": "First line of the abstract.\nSecond line.",
+        "thumb_url": "https://media.invalid/book.jpg?x-expires=1893456000&x-signature=fixture",
+        "category": "Fixture Category",
+        "word_number": "123456",
+        "score": "8.5"
+      }
+    ]
+  }
+}

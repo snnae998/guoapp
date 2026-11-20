@@ -1,0 +1,19 @@
+.tools/
+.worktrees/
+.superpowers/
+bin/
+*.apk
+*.pcap
+*-evidence.json
+phoenix-runtime-window.xml
+
+
+# device capture data: identifiers, pcaps, CA modules
+mitm-capture/
+tmpderive.go
+
+# reverse-engineering notes and evidence: kept locally only
+docs/rea/
+
+# 发布产物：上传到 GitHub Release 的文件
+/dist/

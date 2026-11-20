@@ -1,0 +1,28 @@
+{
+  "code": 0,
+  "data": {
+    "has_more": true,
+    "next_offset": 20,
+    "session_id": "fixture-session",
+    "cell_view": {
+      "book_data": [
+        {
+          "book_id": "7100000000000501",
+          "book_name": "Fixture Rank One",
+          "author": "Fixture Author",
+          "thumb_url": "https://media.invalid/r1.jpg",
+          "rank_score": "2550万热度",
+          "recommend_info": "{\"rank\": \"1\"}"
+        },
+        {
+          "book_id": "7100000000000502",
+          "book_name": "Fixture Rank Two",
+          "author": "Second Author",
+          "thumb_url": "",
+          "rank_score": "",
+          "recommend_info": "{\"rank\": \"2\"}"
+        }
+      ]
+    }
+  }
+}

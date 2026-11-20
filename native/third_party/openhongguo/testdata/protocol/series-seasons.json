@@ -1,0 +1,172 @@
+{
+  "code": 0,
+  "message": "SUCCESS",
+  "log_id": "fixture-log",
+  "data": [
+    {
+      "cell_id": 7100000000000400,
+      "show_type": 547,
+      "cell_name": "系列剧",
+      "cell_operation_type": 1,
+      "use_recommend": true,
+      "cell_abstract": "",
+      "cell_id_str": "7100000000000400",
+      "more_button_position": 0,
+      "category_tag_ids": null,
+      "use_square_pic": "1",
+      "square_pic_style": 1,
+      "next_offset": 3,
+      "has_more": false,
+      "session_id": "fixture-session",
+      "ai_search_placeholder": null,
+      "push_start_info": null,
+      "book_hot_content_data": null,
+      "video_data": [
+        {
+          "vid": "7100000000000601",
+          "cover": "https://media.invalid/season-1.jpg",
+          "duration": 7456,
+          "title": "Fixture Saga 第一季",
+          "video_desc": "fixture text",
+          "series_id": "7100000000000101",
+          "episode": true,
+          "vertical": false,
+          "content_type": 1004,
+          "play_cnt": 5502085,
+          "book_exist": false,
+          "copyright": "",
+          "score": "8.1",
+          "use_video_model": true,
+          "episode_cnt": 154,
+          "video_platform": 3,
+          "disable_play": false,
+          "category_schema": "fixture text",
+          "color_dominate": "#181818",
+          "horiz_cover": "",
+          "secondary_info_list": [
+            {
+              "content": "fixture text"
+            },
+            {
+              "content": "fixture text",
+              "data_type": 3
+            }
+          ],
+          "sub_title_list": [
+            {
+              "content": "fixture text",
+              "data_type": 27
+            },
+            {
+              "content": "fixture text"
+            }
+          ],
+          "pay_info": {},
+          "tag_info": {
+            "text": "",
+            "bg_color": [],
+            "dark_bg_color": []
+          },
+          "support_listen": true,
+          "season_index": 1
+        },
+        {
+          "vid": "7100000000000602",
+          "cover": "https://media.invalid/season-2.jpg",
+          "duration": 7261,
+          "title": "Fixture Saga 第二季",
+          "video_desc": "fixture text",
+          "series_id": "7100000000000502",
+          "episode": true,
+          "vertical": false,
+          "content_type": 1004,
+          "play_cnt": 989083,
+          "book_exist": false,
+          "copyright": "",
+          "score": "8.0",
+          "use_video_model": true,
+          "episode_cnt": 118,
+          "video_platform": 3,
+          "disable_play": false,
+          "category_schema": "fixture text",
+          "color_dominate": "#181818",
+          "horiz_cover": "",
+          "secondary_info_list": [
+            {
+              "content": "fixture text"
+            },
+            {
+              "content": "fixture text",
+              "data_type": 3
+            }
+          ],
+          "sub_title_list": [
+            {
+              "content": "fixture text",
+              "data_type": 27
+            },
+            {
+              "content": "fixture text"
+            }
+          ],
+          "pay_info": {},
+          "tag_info": {
+            "text": "",
+            "bg_color": [],
+            "dark_bg_color": []
+          },
+          "support_listen": true,
+          "season_index": 2
+        },
+        {
+          "vid": "7100000000000603",
+          "cover": "https://media.invalid/season-3.jpg",
+          "duration": 10287,
+          "title": "Fixture Saga 第三季",
+          "video_desc": "fixture text",
+          "series_id": "7100000000000503",
+          "episode": true,
+          "vertical": false,
+          "content_type": 1004,
+          "play_cnt": 1056121,
+          "book_exist": false,
+          "copyright": "",
+          "score": "8.1",
+          "use_video_model": true,
+          "episode_cnt": 0,
+          "video_platform": 3,
+          "disable_play": false,
+          "category_schema": "fixture text",
+          "color_dominate": "#181818",
+          "horiz_cover": "",
+          "secondary_info_list": [
+            {
+              "content": "fixture text"
+            },
+            {
+              "content": "fixture text",
+              "data_type": 3
+            }
+          ],
+          "sub_title_list": [
+            {
+              "content": "fixture text",
+              "data_type": 27
+            },
+            {
+              "content": "fixture text"
+            }
+          ],
+          "pay_info": {},
+          "tag_info": {
+            "text": "",
+            "bg_color": [],
+            "dark_bg_color": []
+          },
+          "support_listen": true,
+          "season_index": 3
+        }
+      ]
+    }
+  ]
+}

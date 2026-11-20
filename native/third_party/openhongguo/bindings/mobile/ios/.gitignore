@@ -1,0 +1,4 @@
+.build/
+.swiftpm/
+# ../build.sh 生成的 Go core 库
+OpenhongguoCore.xcframework/

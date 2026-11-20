@@ -1,0 +1,12 @@
+{
+  "code": 0,
+  "message": "SUCCESS",
+  "data": {
+    "category_tab_config": {
+      "tab_type_list": [8, 1, 0],
+      "tab_name_list": ["全部", "男生", "女生"],
+      "default_tab": 8
+    },
+    "category_tab_data": {"category_tab": -1, "tab_name": "", "cell_data": null, "hide_side_bar": false, "sub_tabs": null}
+  }
+}

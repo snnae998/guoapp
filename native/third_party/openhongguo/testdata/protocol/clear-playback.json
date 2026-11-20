@@ -1,0 +1,7 @@
+{
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "video_model": "{\"status\":10,\"video_id\":\"v-clear-fixture\",\"media_type\":\"video\",\"video_duration\":42,\"url_expire\":1893456000,\"video_list\":[{\"main_url\":\"https://media.invalid/clear-360.mp4\",\"backup_url\":\"https://media.invalid/clear-360-backup.mp4\",\"video_meta\":{\"definition\":\"360p\",\"quality\":\"normal\",\"codec_type\":\"h264\",\"vwidth\":360,\"vheight\":640,\"bitrate\":400000,\"size\":2000000}},{\"main_url\":\"https://media.invalid/clear-1080.mp4\",\"video_meta\":{\"definition\":\"1080p\",\"codec_type\":\"bytevc1\",\"vwidth\":1080,\"vheight\":1920,\"bitrate\":3000000,\"size\":9000000}}]}"
+  }
+}

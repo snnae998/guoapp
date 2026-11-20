@@ -1,0 +1,23 @@
+## 0.4.0
+
+- 新增选项 `signerUrl` 和 `signerToken`（Go 是 `SignerURL`、`SignerToken`），可以把请求签名交给 openhongguo-signer 签名服务。不设时仍用内置签名。签名服务不可用时返回 `SIGNER_UNAVAILABLE`，错误信息带有签名服务给出的原因，不会回退到内置签名。命令行工具用环境变量 `OHG_SIGNER_URL` 和 `OHG_SIGNER_TOKEN`。
+- 新增签名服务 openhongguo-signer（仓库的 `signer/` 目录）：在 unidbg 里运行 App 自带的签名库，通过 HTTP 提供签名。镜像发布在 Docker Hub 的 `beilunyang/openhongguo-signer`。
+
+## 0.3.1
+
+- 播放改走 V5 取址接口，请求参数和签名与 7.4.3.32 版客户端一致。0.3.0 取播放模型失败的问题在这一版修复。
+- 读取演员作品时先取作品页的 tab 列表，再按「剧作」tab 请求。不同设备的 tab 编号不同，0.3.0 在部分设备上会得到空列表。
+- 搜索联想的关键词参数改为 `q`，与客户端一致。
+
+## 0.3.0
+
+- 播放请求带上真正的 Argus/Ladon 签名。服务端从 2026-11-10 起校验这两个签名，0.2.0 取播放模型会得到空结果。
+- 新增 `listDanmaku`，按播放时间分页读取一集的弹幕；可以用 `startMs` 从指定的播放位置读起。
+
+## 0.2.0
+
+- 设备被拒或播放返回空结果时，客户端自动换一台新的匿名设备并重试这次调用。新选项 `deviceResets` 设置一次调用最多换几台设备，默认 2，0 表示关闭。
+
+## 0.1.0
+
+- 第一个版本。

@@ -1,0 +1,37 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "ugc_user": {
+      "user_id": "7100000000001701",
+      "base_info": {
+        "user_id": "7100000000001701",
+        "user_name": "Fixture Actor",
+        "user_avatar": "https://media.invalid/avatar.jpg",
+        "gender": 2,
+        "description": "fixture text"
+      },
+      "user_tag": {
+        "sub_title_list": [
+          {
+            "text": "女演员"
+          }
+        ]
+      },
+      "user_relation": {
+        "can_follow": true,
+        "relation_type": 1,
+        "fans_num": 2603410,
+        "recv_digged_count": 185960233
+      },
+      "user_expand": {
+        "sub_title_list": [
+          {
+            "text": "水瓶座",
+            "text_ext": 0
+          }
+        ]
+      }
+    }
+  }
+}

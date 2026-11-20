@@ -1,0 +1,67 @@
+{
+  "code": 0,
+  "data": {
+    "selector_rows": [
+      {
+        "type": "genre",
+        "row_name": "全部体裁",
+        "items": [
+          {
+            "show_name": "真人剧",
+            "selector_item_id": "short_play"
+          },
+          {
+            "show_name": "漫剧",
+            "selector_item_id": "comic_series"
+          },
+          {
+            "show_name": "AI剧",
+            "selector_item_id": "ai_series"
+          }
+        ]
+      },
+      {
+        "type": "category_dim_theme",
+        "row_name": "全部主题",
+        "items": [
+          {
+            "show_name": "悬疑",
+            "selector_item_id": "cate_165"
+          },
+          {
+            "show_name": "玄幻",
+            "selector_item_id": "cate_7"
+          }
+        ]
+      },
+      {
+        "type": "sort",
+        "row_name": "全部推荐",
+        "items": [
+          {
+            "show_name": "最新上架",
+            "selector_item_id": "online_time"
+          },
+          {
+            "show_name": "最高热度",
+            "selector_item_id": "hot_score"
+          },
+          {
+            "show_name": "最高收藏",
+            "selector_item_id": "hot_collect"
+          }
+        ]
+      },
+      {
+        "type": "online_time",
+        "row_name": "全部时间",
+        "items": [
+          {
+            "show_name": "7天内上新",
+            "selector_item_id": "days_7"
+          }
+        ]
+      }
+    ]
+  }
+}

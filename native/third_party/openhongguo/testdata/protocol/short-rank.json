@@ -1,0 +1,103 @@
+{
+  "code": 0,
+  "data": {
+    "has_more": true,
+    "next_offset": 10,
+    "session_id": "fixture-session",
+    "rank_version": "1792811520",
+    "cell_view": {
+      "cell_selector": {
+        "outer_row": {
+          "items": [
+            {
+              "show_name": "全部",
+              "selector_item_id": "all",
+              "is_selected": false,
+              "sub_cell_selector": {
+                "outer_row": {
+                  "items": [
+                    {
+                      "show_name": "推荐榜",
+                      "selector_item_id": "ranklist_hot_sc",
+                      "is_selected": false
+                    },
+                    {
+                      "show_name": "热播榜",
+                      "selector_item_id": "ranklist_hot_play_sc",
+                      "is_selected": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "show_name": "真人剧",
+              "selector_item_id": "human",
+              "is_selected": true,
+              "sub_cell_selector": {
+                "outer_row": {
+                  "items": [
+                    {
+                      "show_name": "推荐榜",
+                      "selector_item_id": "human_hot_sc",
+                      "is_selected": false
+                    },
+                    {
+                      "show_name": "热播榜",
+                      "selector_item_id": "human_hot_play",
+                      "is_selected": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "cell_data": [
+        {
+          "video_data": [
+            {
+              "series_id": "7100000000000101",
+              "title": "Fixture Ranked One",
+              "cover": "https://media.invalid/101.jpg",
+              "episode_cnt": 60,
+              "recommend_info": "{\"rank\": \"1\"}",
+              "rec_text_item": {
+                "RecommendText": "7921万热度"
+              }
+            }
+          ]
+        },
+        {
+          "video_data": [
+            {
+              "series_id": "7100000000000103",
+              "title": "Fixture Promoted",
+              "cover": "https://media.invalid/103.jpg",
+              "episode_cnt": 30,
+              "recommend_info": "{\"rank\": \"2\"}",
+              "rec_text_item": {
+                "RecommendText": "平台推荐"
+              }
+            }
+          ]
+        },
+        {
+          "video_data": [
+            {
+              "series_id": "7100000000000102",
+              "title": "Fixture Ranked Two",
+              "cover": "https://media.invalid/102.jpg",
+              "episode_cnt": 45,
+              "recommend_info": "{\"rank\": \"2\"}",
+              "rec_text_item": {
+                "RecommendText": "6506万热度"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

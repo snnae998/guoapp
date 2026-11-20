@@ -1,0 +1,13 @@
+{
+  "code": 0,
+  "message": "SUCCESS",
+  "data": {
+    "query_key": "fixture",
+    "query_result": ["Fixture Word One", "Fixture Word Two"],
+    "suggest_result": null,
+    "query_result_v2": [
+      {"name": "Fixture Word One", "keyword": "7100000000000101", "word_type": 2, "pic_url": "", "schema_url": "", "search_high_light": {"text": "Fixture Word One", "rich_text": "<em>Fixture</em> Word One", "high_light_position": [[0, 7]]}, "sug_abstract": "Fixture abstract"},
+      {"name": "Fixture Word Two", "keyword": "Fixture Word Two", "word_type": 0, "pic_url": "", "schema_url": "", "search_high_light": {"text": "Fixture Word Two", "rich_text": "Fixture Word Two", "high_light_position": []}, "sug_abstract": ""}
+    ]
+  }
+}

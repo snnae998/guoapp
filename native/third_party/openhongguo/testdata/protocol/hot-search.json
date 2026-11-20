@@ -1,0 +1,94 @@
+{
+  "common_ab_info": {},
+  "code": 0,
+  "message": "SUCCESS",
+  "log_id": "fixture-log",
+  "data": [
+    {
+      "cell_id": 7100000000001101,
+      "show_type": 473,
+      "cell_name": "",
+      "cell_operation_type": 1,
+      "use_recommend": true,
+      "cell_abstract": "",
+      "cell_id_str": "7100000000000726",
+      "more_button_position": 0,
+      "category_tag_ids": null,
+      "style": {
+        "cover_size": 0,
+        "interval_type": 0,
+        "use_wide_item_space": false,
+        "use_new_booklist_style": false,
+        "with_favorite_button": false,
+        "show_more_book_abstract": false,
+        "candidate_postion": 0,
+        "jump_to_page": 0,
+        "topic_square_with_book": false,
+        "use_aweme_sdk": false,
+        "use_new_one_to_one_point_four_ratio_style": false,
+        "hide_tab_selector": false,
+        "audio_both_jump_player": false,
+        "show_username": false,
+        "use_selector_v2": false,
+        "enable_new_style_for_search_mid_page_golden_line": true
+      },
+      "search_golden_line": [
+        {
+          "icon": "https://media.invalid/x.jpg",
+          "dark_icon": "https://media.invalid/x.jpg",
+          "text": "fixture text",
+          "schema": "https://media.invalid/x.jpg"
+        },
+        {
+          "icon": "https://media.invalid/x.jpg",
+          "dark_icon": "https://media.invalid/x.jpg",
+          "text": "fixture text",
+          "schema": "https://media.invalid/x.jpg"
+        }
+      ],
+      "ai_search_placeholder": null,
+      "push_start_info": null,
+      "book_hot_content_data": null
+    },
+    {
+      "cell_id": 0,
+      "show_type": 554,
+      "cell_name": "",
+      "cell_operation_type": 0,
+      "use_recommend": false,
+      "category_tag_ids": null,
+      "render_cell_type": 1,
+      "lynx_url": "https://media.invalid/x.jpg",
+      "lynx_config": {
+        "phone_height": {
+          "hdefault": 778,
+          "medium": 778,
+          "large": 778
+        },
+        "pad_height": {
+          "hdefault": 778,
+          "medium": 778,
+          "large": 778
+        },
+        "client_ab_key": [
+          "search_opt_launch_v639",
+          "fixture text"
+        ],
+        "phone_width": {
+          "hdefault": 0,
+          "medium": 0,
+          "large": 0
+        },
+        "pad_width": {
+          "hdefault": 0,
+          "medium": 0,
+          "large": 0
+        }
+      },
+      "ai_search_placeholder": null,
+      "push_start_info": null,
+      "book_hot_content_data": null,
+      "lynx_data": "[{\"cell_id\": 7100000000001102, \"show_type\": 483, \"cell_name\": \"猜你想搜\", \"cell_id_str\": \"7100000000000701\", \"render_cell_type\": null, \"extra\": null, \"session_id\": \"fixture text\", \"next_offset\": 3, \"video_data\": [{\"vid\": \"7100000000000901\", \"cover\": \"https://media.invalid/hot-1.jpg?x-expires=1797998255\", \"title\": \"Fixture Hot Guess 1\", \"series_id\": \"7100000000000801\", \"content_type\": 1, \"recommend_info\": \"fixture text\", \"recommend_group_id\": \"7100000000000704\", \"pay_info\": {}, \"category_schema\": \"https://media.invalid/x.jpg\", \"tag_info\": {\"text\": \"新剧\", \"bg_color\": [\"#00AE83\"], \"dark_bg_color\": [\"#008060\"], \"position\": 1, \"is_align_to_edge\": true}, \"sub_title\": \"fixture text\", \"episode_cnt\": 65, \"rec_text\": \"4001万热度\", \"show_rec_text\": true, \"rec_text_icon_type\": 1}, {\"vid\": \"7100000000000902\", \"cover\": \"https://media.invalid/hot-2.jpg?x-expires=1797998255\", \"title\": \"Fixture Hot Guess 2\", \"series_id\": \"7100000000000802\", \"content_type\": 1, \"recommend_info\": \"fixture text\", \"recommend_group_id\": \"7100000000000707\", \"pay_info\": {}, \"category_schema\": \"https://media.invalid/x.jpg\", \"sub_title\": \"fixture text\", \"episode_cnt\": 60, \"rec_text\": \"4002万热度\", \"show_rec_text\": true, \"rec_text_icon_type\": 1}]}, {\"cell_id\": 7100000000001103, \"show_type\": 624, \"cell_name\": \"\", \"cell_id_str\": \"7100000000000725\", \"render_cell_type\": null, \"extra\": {\"short_play_sub_info_opt\": \"false\", \"has_render_optimization\": \"false\"}, \"cell_data\": [{\"cell_id\": 7100000000001104, \"show_type\": 388, \"cell_name\": \"短剧热搜榜\", \"cell_id_str\": \"7100000000000708\", \"render_cell_type\": null, \"back_color\": \"#F5FFFF\", \"cell_picture_url\": \"https://media.invalid/x.jpg\", \"dark_mode_attr\": {\"back_color\": \"#1C1C1C\", \"cell_picture_url\": \"https://media.invalid/x.jpg\"}, \"extra\": {\"type\": \"video_board\"}, \"cell_url\": \"\", \"video_data\": [{\"vid\": \"7100000000000911\", \"cover\": \"https://media.invalid/hot-11.jpg?x-expires=1797998255\", \"title\": \"Fixture Hot Board 11\", \"series_id\": \"7100000000000811\", \"content_type\": 1, \"recommend_info\": \"fixture text\", \"recommend_group_id\": \"7100000000000711\", \"card_tips\": \"389万热搜值\", \"pay_info\": {}, \"category_schema\": \"https://media.invalid/x.jpg\", \"episode_cnt\": 80, \"rec_text\": \"4011万热度\", \"show_rec_text\": true, \"rec_text_icon_type\": 1}, {\"vid\": \"7100000000000912\", \"cover\": \"https://media.invalid/hot-12.jpg?x-expires=1797998255\", \"title\": \"Fixture Hot Board 12\", \"series_id\": \"7100000000000812\", \"content_type\": 1, \"recommend_info\": \"fixture text\", \"recommend_group_id\": \"7100000000000714\", \"card_tips\": \"388万热搜值\", \"pay_info\": {}, \"category_schema\": \"https://media.invalid/x.jpg\", \"tag_info\": {\"text\": \"新剧\", \"bg_color\": [\"#00AE83\"], \"dark_bg_color\": [\"#00AE83\"]}, \"episode_cnt\": 107, \"rec_text\": \"4012万热度\", \"show_rec_text\": true, \"rec_text_icon_type\": 1}]}, {\"cell_id\": 7100000000001105, \"show_type\": 591, \"cell_name\": \"漫剧热搜榜\", \"cell_id_str\": \"7100000000000715\", \"render_cell_type\": null, \"extra\": null, \"video_data\": [{\"vid\": \"7100000000000913\", \"cover\": \"https://media.invalid/hot-13.jpg?x-expires=1797998255\", \"title\": \"Fixture Hot Board 13\", \"series_id\": \"7100000000000813\", \"content_type\": 1004, \"recommend_info\": \"fixture text\", \"recommend_group_id\": \"7100000000000718\", \"card_tips\": \"387万热搜值\", \"pay_info\": {}, \"category_schema\": \"https://media.invalid/x.jpg\", \"tag_info\": {\"text\": \"新剧\", \"bg_color\": [\"#00AE83\"], \"dark_bg_color\": [\"#00AE83\"]}, \"episode_cnt\": 66, \"rec_text\": \"4013万热度\", \"show_rec_text\": true, \"rec_text_icon_type\": 1}, {\"vid\": \"7100000000000914\", \"cover\": \"https://media.invalid/hot-14.jpg?x-expires=1797998255\", \"title\": \"Fixture Hot Board 14\", \"series_id\": \"7100000000000814\", \"content_type\": 1004, \"recommend_info\": \"fixture text\", \"recommend_group_id\": \"7100000000000721\", \"card_tips\": \"386万热搜值\", \"pay_info\": {}, \"category_schema\": \"https://media.invalid/x.jpg\", \"tag_info\": {\"text\": \"新剧\", \"bg_color\": [\"#00AE83\"], \"dark_bg_color\": [\"#00AE83\"]}, \"episode_cnt\": 56, \"rec_text\": \"4014万热度\", \"show_rec_text\": true, \"rec_text_icon_type\": 1}]}, {\"cell_id\": 7100000000001106, \"show_type\": 619, \"cell_name\": \"热点话题榜\", \"cell_id_str\": \"7100000000000722\", \"render_cell_type\": null, \"extra\": null, \"video_topic\": [{\"hg_topic_type\": 1, \"topic_id\": \"7100000000001015\", \"title\": \"Fixture topic 15\", \"url\": \"dragon8662://search?source=1&directQueryWord=Fixture%20topic%2015&directSearchSourceId=topic_board#fixture\", \"secondary_info_list\": [{\"content\": \"4.5万热度\"}]}, {\"hg_topic_type\": 1, \"topic_id\": \"7100000000001016\", \"title\": \"Fixture topic 16\", \"url\": \"dragon8662://search?source=1&directQueryWord=Fixture%20topic%2016&directSearchSourceId=topic_board#fixture\", \"secondary_info_list\": [{\"content\": \"4.6万热度\"}]}]}]}]"
+    }
+  ]
+}
