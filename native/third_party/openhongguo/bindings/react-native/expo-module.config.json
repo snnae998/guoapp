@@ -1,9 +1,0 @@
-{
-  "platforms": ["android", "apple"],
-  "android": {
-    "modules": ["dev.openhongguo.reactnative.OpenhongguoModule"]
-  },
-  "apple": {
-    "modules": ["OpenhongguoModule"]
-  }
-}
