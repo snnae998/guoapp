@@ -1,0 +1,10 @@
+# 代替同目录的 .gitignore：pub publish 时带上 ../mobile/build.sh flutter 放进来的
+# Go core（android/libs/、android/src/main/jniLibs/、ios/OpenhongguoCore.xcframework/），
+# 其余规则与 .gitignore 相同。
+.dart_tool/
+.flutter-plugins-dependencies
+/build/
+/pubspec.lock
+android/.gradle
+android/local.properties
+android/build/

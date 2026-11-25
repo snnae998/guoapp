@@ -1,0 +1,169 @@
+{
+  "code": 0,
+  "message": "请求成功",
+  "data": {
+    "7100000000000101": {
+      "video_data": {
+        "series_id": 7100000000000101,
+        "series_id_str": "7100000000000101",
+        "series_title": "Fixture Lantern Court",
+        "series_intro": "A public synopsis.",
+        "series_cover": "https://media.invalid/cover.jpg",
+        "episode_cnt": 2,
+        "episode_right_text": "全2集",
+        "series_status": 1,
+        "series_sub_title_list": [
+          "全2集",
+          "红果热度值12万"
+        ],
+        "create_time": 1735689600,
+        "hot_score": 120000,
+        "series_play_cnt": 340000,
+        "followed_cnt": 5600,
+        "digg_cnt": 78,
+        "content_type": 1,
+        "video_platform": 3,
+        "pay_info": {
+          "pay_type": 0
+        },
+        "age_gate_info": {
+          "age_gate": 0
+        },
+        "secondary_infos": [
+          {
+            "content": "第1季",
+            "data_type": 0,
+            "schema": ""
+          },
+          {
+            "content": "古装",
+            "data_type": 3,
+            "schema": "dragon8662://search?directQueryWord=fixture"
+          }
+        ],
+        "video_list": [
+          {
+            "vid": "7100000000000201",
+            "vid_index": 1,
+            "title": "Episode One",
+            "duration": 90,
+            "series_id": "7100000000000101",
+            "disable_play": false,
+            "vertical": true,
+            "is_newly_update": true,
+            "cover": "https://media.invalid/ep1.jpg",
+            "episode_cover": "https://media.invalid/ep1.jpg",
+            "content_type": 1,
+            "comment_count": 12,
+            "digged_count": 34
+          },
+          {
+            "vid": "7100000000000202",
+            "vid_index": 2,
+            "title": "Episode Two",
+            "duration": 95,
+            "series_id": "7100000000000101",
+            "disable_play": true,
+            "vertical": false,
+            "is_newly_update": false,
+            "cover": "https://media.invalid/ep2.jpg",
+            "episode_cover": "https://media.invalid/ep2.jpg",
+            "content_type": 1,
+            "comment_count": 0,
+            "digged_count": 0
+          }
+        ]
+      },
+      "video_relate_book": {
+        "ShowInEpisodeIndex": [
+          2
+        ],
+        "book_info": {
+          "book_id": "7100000000002001",
+          "book_name": "Fixture Source Novel",
+          "book_short_name": "Fixture Lantern Court",
+          "book_type": 0,
+          "creation_status": "0",
+          "genre_type": "0",
+          "read_count": "959435",
+          "relate_post_id": "",
+          "tags": "悬疑,穿越",
+          "thumb_url": "https://media.invalid/novel.jpg?x-expires=1797999824"
+        }
+      }
+    },
+    "7100000000000102": {
+      "video_data": {
+        "series_id": 7100000000000102,
+        "series_id_str": "7100000000000102",
+        "series_title": "Fixture North Gate",
+        "series_intro": "A public synopsis.",
+        "series_cover": "https://media.invalid/cover.jpg",
+        "episode_cnt": 2,
+        "episode_right_text": "全2集",
+        "series_status": 1,
+        "series_sub_title_list": [
+          "全2集",
+          "红果热度值12万"
+        ],
+        "create_time": 1735689600,
+        "hot_score": 120000,
+        "series_play_cnt": 340000,
+        "followed_cnt": 5600,
+        "digg_cnt": 78,
+        "content_type": 1,
+        "video_platform": 3,
+        "pay_info": {
+          "pay_type": 0
+        },
+        "age_gate_info": {
+          "age_gate": 0
+        },
+        "secondary_infos": [
+          {
+            "content": "第1季",
+            "data_type": 0,
+            "schema": ""
+          },
+          {
+            "content": "古装",
+            "data_type": 3,
+            "schema": "dragon8662://search?directQueryWord=fixture"
+          }
+        ],
+        "video_list": [
+          {
+            "vid": "7100000000001901",
+            "vid_index": 1,
+            "title": "Episode One",
+            "duration": 90,
+            "series_id": "7100000000000102",
+            "disable_play": false,
+            "vertical": true,
+            "is_newly_update": true,
+            "cover": "https://media.invalid/ep1.jpg",
+            "episode_cover": "https://media.invalid/ep1.jpg",
+            "content_type": 1,
+            "comment_count": 12,
+            "digged_count": 34
+          },
+          {
+            "vid": "7100000000001902",
+            "vid_index": 2,
+            "title": "Episode Two",
+            "duration": 95,
+            "series_id": "7100000000000102",
+            "disable_play": true,
+            "vertical": false,
+            "is_newly_update": false,
+            "cover": "https://media.invalid/ep2.jpg",
+            "episode_cover": "https://media.invalid/ep2.jpg",
+            "content_type": 1,
+            "comment_count": 0,
+            "digged_count": 0
+          }
+        ]
+      }
+    }
+  }
+}

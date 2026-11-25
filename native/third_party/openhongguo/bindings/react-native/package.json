@@ -1,0 +1,49 @@
+{
+  "name": "react-native-openhongguo",
+  "version": "0.4.1",
+  "description": "红果短剧（Hongguo）的非官方 React Native SDK：匿名浏览、搜索与播放，基于 Go SDK 编译的原生库",
+  "author": "beilunyang",
+  "homepage": "https://github.com/beilunyang/openhongguo/tree/main/bindings/react-native#readme",
+  "bugs": "https://github.com/beilunyang/openhongguo/issues",
+  "type": "module",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build/",
+    "src/",
+    "android/build.gradle",
+    "android/consumer-rules.pro",
+    "android/src/",
+    "android/libs/",
+    "ios/",
+    "expo-module.config.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "node -e \"require('fs').copyFileSync('../../LICENSE', 'LICENSE')\" && tsc",
+    "test": "tsc && node --test test/*.test.ts"
+  },
+  "peerDependencies": {
+    "expo-modules-core": "*",
+    "react-native": "*"
+  },
+  "keywords": [
+    "hongguo",
+    "红果短剧",
+    "short-drama",
+    "sdk",
+    "react-native",
+    "expo"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beilunyang/openhongguo.git",
+    "directory": "bindings/react-native"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

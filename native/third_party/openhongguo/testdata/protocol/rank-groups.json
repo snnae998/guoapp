@@ -1,0 +1,21 @@
+{
+  "code": 0,
+  "data": {
+    "tabs": [
+      {
+        "cell_view": {
+          "cells": [
+            {
+              "rank_with_category_data": {
+                "rank_algo_list": [
+                  {"rank_algo": 179, "rank_name": "推荐榜"},
+                  {"rank_algo": "183", "rank_name": "高分榜"}
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

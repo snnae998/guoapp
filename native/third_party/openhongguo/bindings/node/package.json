@@ -1,0 +1,46 @@
+{
+  "name": "openhongguo",
+  "version": "0.4.1",
+  "description": "红果短剧（Hongguo）的非官方 Node.js SDK：匿名浏览、搜索与播放，基于 Go SDK 编译的 WebAssembly",
+  "author": "beilunyang",
+  "homepage": "https://github.com/beilunyang/openhongguo/tree/main/bindings/node#readme",
+  "bugs": "https://github.com/beilunyang/openhongguo/issues",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "types.d.ts",
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "GO_LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test"
+  },
+  "keywords": [
+    "hongguo",
+    "红果短剧",
+    "short-drama",
+    "sdk",
+    "wasm"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beilunyang/openhongguo.git",
+    "directory": "bindings/node"
+  }
+}

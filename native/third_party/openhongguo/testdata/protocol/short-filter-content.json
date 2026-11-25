@@ -1,0 +1,22 @@
+{
+  "code": 0,
+  "data": {
+    "has_more": true,
+    "next_offset": 18,
+    "session_id": "fixture-session",
+    "video_data": [
+      {
+        "series_id": "7100000000000101",
+        "title": "Fixture Drama One",
+        "cover": "https://media.invalid/d1.jpg?x-expires=1893456000&x-signature=f",
+        "episode_cnt": 48
+      },
+      {
+        "series_id": "7100000000000102",
+        "title": "Fixture Drama Two",
+        "cover": "",
+        "episode_cnt": 30
+      }
+    ]
+  }
+}

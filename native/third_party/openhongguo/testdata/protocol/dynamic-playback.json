@@ -1,0 +1,10 @@
+{
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "expire_time": 1893456000,
+    "video_width": 1912,
+    "video_height": 808,
+    "video_model": "{\"status\":10,\"video_id\":\"v-movie-fixture\",\"media_type\":\"video\",\"video_duration\":1500.0,\"url_expire\":1893456000,\"video_list\":[],\"dynamic_video\":{\"dynamic_type\":\"segment_base\",\"dynamic_video_list\":[{\"main_url\":\"https://media.invalid/movie-720.mp4\",\"encrypt_info\":{\"encrypt\":true,\"encryption_method\":\"cenc-aes-ctr\",\"kid\":\"fixture-kid\",\"spade_a\":\"fixture-movie-spade\"},\"base_range_info\":{\"init_range\":\"0-1476\",\"index_range\":\"1477-15104\",\"first_moof_range\":\"15105-16168\"},\"gear_des_key\":\"0:DASH|1:encrypt|2:h265_hvc1|4:720p\",\"video_meta\":{\"definition\":\"720p\",\"quality\":\"normal\",\"vtype\":\"dash\",\"codec_type\":\"bytevc1\",\"vwidth\":1274,\"vheight\":538,\"bitrate\":2000000,\"size\":50000000}},{\"main_url\":\"https://media.invalid/movie-1080.mp4\",\"encrypt_info\":{\"encrypt\":true,\"encryption_method\":\"cenc-aes-ctr\",\"kid\":\"fixture-kid\",\"spade_a\":\"fixture-movie-spade\"},\"base_range_info\":{\"init_range\":\"0-1476\",\"index_range\":\"1477-15104\",\"first_moof_range\":\"15105-16168\"},\"gear_des_key\":\"0:DASH|1:encrypt|2:h265_hvc1|4:1080p\",\"video_meta\":{\"definition\":\"1080p\",\"quality\":\"normal\",\"vtype\":\"dash\",\"codec_type\":\"bytevc1\",\"vwidth\":1912,\"vheight\":808,\"bitrate\":4000000,\"size\":90000000}}],\"dynamic_audio_list\":[{\"main_url\":\"https://media.invalid/movie-audio.mp4\",\"encrypt_info\":{\"encrypt\":true,\"encryption_method\":\"cenc-aes-ctr\",\"kid\":\"fixture-kid\",\"spade_a\":\"fixture-movie-spade\"},\"audio_meta\":{\"atype\":\"dash\",\"quality\":\"normal\",\"bitrate\":70972,\"codec_type\":\"bytevc1\"}}]}}"
+  }
+}

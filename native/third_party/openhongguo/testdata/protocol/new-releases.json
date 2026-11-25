@@ -1,0 +1,56 @@
+{
+  "code": 0,
+  "message": "SUCCESS",
+  "data": {
+    "subscribe_items": [
+      {
+        "is_online": true,
+        "item_id": "0",
+        "schedule_publish_time": 1792772281,
+        "category": "脑洞",
+        "categories": [
+          "脑洞",
+          "系统"
+        ],
+        "sub_title_list": [
+          {
+            "content": "脑洞"
+          },
+          {
+            "content": "系统"
+          }
+        ],
+        "rec_tags": [
+          {
+            "content": "378万热度",
+            "data_type": 27
+          }
+        ],
+        "recommend_group_id": "7100000000001501",
+        "expected_publish_time": 0,
+        "subscribe_data": {
+          "vid": "7100000000001601",
+          "series_id": "7100000000001501",
+          "title": "Fixture Out Today",
+          "video_desc": "fixture text",
+          "cover": "https://media.invalid/new-1.jpg?x-expires=1797999399",
+          "episode_cnt": 60,
+          "content_type": 1,
+          "video_platform": 3
+        }
+      }
+    ],
+    "next_offset": 2,
+    "has_more": true,
+    "session_id": "fixture-session",
+    "calendar_schema": {
+      "date_list": [
+        "20261023",
+        "20261024",
+        "20261025"
+      ],
+      "default_date": "20261023",
+      "current_date": "20261024"
+    }
+  }
+}

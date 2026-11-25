@@ -1,0 +1,19 @@
+{
+  "code": 0,
+  "data": {
+    "can_vote": false,
+    "activity_basic": {
+      "activity_stage": 0,
+      "all_rank_list_basic": [
+        {"id": "hongguo_actor_fans_ranklist", "name": "星粉榜", "type": 3, "shortlisted_number": 50}
+      ]
+    },
+    "rank_list": {
+      "rank_list_short_info": {"id": "hongguo_actor_fans_ranklist", "name": "星粉榜", "type": 3},
+      "items": [
+        {"rank_item_basic": {"id": "1", "rank_list_id": "r", "index": 1, "vote_count": 120}, "type": 1, "actor_info": {"name": "Fixture Actor", "avatar": ""}, "playlet_info": {"id": "7100000000000101", "title": "Fixture Play", "cover": ""}}
+      ],
+      "turn_page_info": {"has_more": false, "next_offset": 0}
+    }
+  }
+}
